@@ -29,10 +29,11 @@ body{
 }
 
 .sticky{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
     /*width: 100vw;*/
 }
 
@@ -151,10 +152,6 @@ ul{
     line-height: normal;
 }
 
-.sticky + .main{
-    padding-top: 118px;
-}
-
 .download-app-section{
     background-color: var(--secondary-bg-color);
     padding: 10px 0;
@@ -177,7 +174,7 @@ ul{
     color: inherit;
 }
 
-.flagship-section, .best-of-air-max-section, .featured-section{
+.flagship-section, .best-of-air-max-section, .featured-section, .gear-up-section{
     padding-bottom: 85px;
 }
 
@@ -195,7 +192,7 @@ ul{
     margin-bottom: 5px;
 }
 
-.flagship-title{
+.flagship-title, .dont-miss-title{
     font-size: 56px;
     line-height: 60px;
     font-weight: 700;
@@ -203,7 +200,7 @@ ul{
     margin-bottom: 25px;
 }
 
-.flagship-description{
+.flagship-description, .dont-miss-description{
     max-width: 500px;
     font-size: 15px;
     line-height: 24px;
@@ -219,7 +216,7 @@ ul{
     gap: 10px;
 }
 
-.flagship-button, .featured-button{
+.flagship-button, .featured-button, .dont-miss-button{
     border: none;
     text-decoration: none;
     color: #FFF;
@@ -243,6 +240,10 @@ ul{
     text-align: start;
     font-size: 22px;
     line-height: 28px;
+}
+
+.swiper-wrapper{
+    z-index: 1;
 }
 
 .swiper{
@@ -336,7 +337,7 @@ ul{
     margin: 0 0 30px;
 }
 
-.featured-button{
+.featured-button, .dont-miss-button{
     margin-inline: auto;
     display: block;
     width: fit-content;
@@ -347,6 +348,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 60px;
 }
 
 .gear-up-shop{
@@ -355,4 +357,15 @@ ul{
 
 .gear-up-image{
     width: 300px;
+}
+
+.dont-miss-image{
+    object-fit: contain;
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.dont-miss-description{
+    margin-bottom: 30px;
 }

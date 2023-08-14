@@ -14,7 +14,7 @@ const swiperAirMax = new Swiper('.air-max-swiper', {
     },
 });
 
-const swiperGearUp = new Swiper('.gear-up-shop-men-swiper', {
+const swiperGearUpMen = new Swiper('.gear-up-shop-men-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
@@ -27,6 +27,22 @@ const swiperGearUp = new Swiper('.gear-up-shop-men-swiper', {
     navigation: {
         nextEl: '.gear-up-men-next',
         prevEl: '.gear-up-men-prev',
+    },
+})
+
+const swiperGearUpWomen = new Swiper('.gear-up-shop-women-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 12,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.gear-up-women-next',
+        prevEl: '.gear-up-women-prev',
     },
 })
 

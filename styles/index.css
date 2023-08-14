@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F5F5;
+    --text-color: #111111;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*width: 100vw;*/
+}
+
+.container{
+    max-width: 1440px;
+    padding-inline: 50px;
+    margin-inline: auto;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-navbar-list{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 0;
+    background-color: var(--secondary-bg-color);
+}
+
+.secondary-logo{
+    width: 20px;
+    height: 20px;
+}
+
+.main-anchor-wrapper{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#main-anchor{
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    background-color: var(--primary-bg-color);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.secondary-menu-list{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.primary-navbar-list{
+    padding: 20px 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 17px;
+}
+
+.primary-logo{
+    width: 60px;
+    height: 20px;
+}
+
+.categories-menu-list{
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.primary-menu-list{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 100px;
+}
+
+.search-icon{
+    width: 17px;
+    height: 17px;
+}
+
+#search-bar{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#search-bar::-webkit-search-cancel-button, #search-bar:focus::-webkit-search-cancel-button, #search-bar:active::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-bar::placeholder{
+    font-size: 15px;
+    font-weight: 500;
+    color: #CCC;
+    font-family: 'Roboto', sans-serif;
+    line-height: normal;
+}
+
+.sticky + .main{
+    padding-top: 118px;
+}
+
+.download-app-section{
+    background-color: var(--secondary-bg-color);
+    padding: 10px 0;
+}
+
+.download-app-title{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.download-app-description{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.download-app-link{
+    font-weight: 700;
+    color: inherit;
+}
+
+.flagship-section, .best-of-air-max-section, .featured-section{
+    padding-bottom: 85px;
+}
+
+.flagship-image{
+    object-fit: contain;
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.flagship-subtitle{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.flagship-title{
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.flagship-description{
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.flagship-buttons-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.flagship-button, .featured-button{
+    border: none;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 8px 22px;
+    background-color: #111111;
+    border-radius: 30px;
+    width: 140px;
+}
+
+.title-and-controller-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.section-title{
+    text-align: start;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    position: static;
+    margin: 0;
+    padding: 24px;
+    border-radius: 50%;
+    background-color: var(--secondary-bg-color);
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    content: none;
+    display: none;
+}
+
+.slide-content{
+    max-width: 440px;
+}
+
+.swiper-button-disabled{
+    color: #CCCCCC;
+}
+
+.slide-image{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.title-and-price-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.swiper-buttons-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+#left-arrow, #right-arrow{
+    width: 24px;
+    height: 24px;
+}
+
+.slide-title{
+    text-align: start;
+}
+
+.version{
+    text-align: start;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #757575;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+
+.featured-image{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.featured-phrase{
+    text-transform: uppercase;
+    font-size: 54px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.featured-description{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 0 30px;
+}
+
+.featured-button{
+    margin-inline: auto;
+    display: block;
+    width: fit-content;
+}
+
+.gear-up-shops-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gear-up-shop{
+    width: 612px;
+}
+
+.gear-up-image{
+    width: 300px;
+}
